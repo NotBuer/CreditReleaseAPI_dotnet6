@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "6bHVLkRem8TuGMZHPJlRuVyIoAvKZveKIjBfRZhhVE4=",
+  "Source": "CreditRelease.API",
+  "BasePath": "_content/CreditRelease.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

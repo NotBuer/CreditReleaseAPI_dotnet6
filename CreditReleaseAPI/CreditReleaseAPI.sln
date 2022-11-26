@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditRelease.Application",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Presentation", "1. Presentation", "{6DEBFAE8-1E68-4FCB-B5B1-CF7AD2382451}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditRelease.API", "CreditRelease.API\CreditRelease.API.csproj", "{3FF7B8BA-5D26-48EA-A8EF-21226B2E259A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditRelease.API", "CreditRelease.API\CreditRelease.API.csproj", "{3FF7B8BA-5D26-48EA-A8EF-21226B2E259A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

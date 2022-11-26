@@ -1,0 +1,14 @@
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\Domain\bin\Debug\net6.0\CreditRelease.Domain.deps.json
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\Domain\bin\Debug\net6.0\CreditRelease.Domain.runtimeconfig.json
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\Domain\bin\Debug\net6.0\CreditRelease.Domain.dll
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\Domain\bin\Debug\net6.0\CreditRelease.Domain.pdb
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\Domain\obj\Debug\net6.0\CreditRelease.Domain.csproj.AssemblyReference.cache
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\Domain\obj\Debug\net6.0\CreditRelease.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\Domain\obj\Debug\net6.0\CreditRelease.Domain.AssemblyInfoInputs.cache
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\Domain\obj\Debug\net6.0\CreditRelease.Domain.AssemblyInfo.cs
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\Domain\obj\Debug\net6.0\CreditRelease.Domain.csproj.CoreCompileInputs.cache
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\Domain\obj\Debug\net6.0\CreditRelease.Domain.dll
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\Domain\obj\Debug\net6.0\refint\CreditRelease.Domain.dll
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\Domain\obj\Debug\net6.0\CreditRelease.Domain.pdb
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\Domain\obj\Debug\net6.0\CreditRelease.Domain.genruntimeconfig.cache
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\Domain\obj\Debug\net6.0\ref\CreditRelease.Domain.dll
