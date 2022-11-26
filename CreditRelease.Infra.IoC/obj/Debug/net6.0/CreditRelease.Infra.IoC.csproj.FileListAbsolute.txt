@@ -1,0 +1,12 @@
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.IoC\bin\Debug\net6.0\CreditRelease.Infra.IoC.deps.json
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.IoC\bin\Debug\net6.0\CreditRelease.Infra.IoC.dll
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.IoC\bin\Debug\net6.0\CreditRelease.Infra.IoC.pdb
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.IoC\obj\Debug\net6.0\CreditRelease.Infra.IoC.csproj.AssemblyReference.cache
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.IoC\obj\Debug\net6.0\CreditRelease.Infra.IoC.GeneratedMSBuildEditorConfig.editorconfig
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.IoC\obj\Debug\net6.0\CreditRelease.Infra.IoC.AssemblyInfoInputs.cache
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.IoC\obj\Debug\net6.0\CreditRelease.Infra.IoC.AssemblyInfo.cs
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.IoC\obj\Debug\net6.0\CreditRelease.Infra.IoC.csproj.CoreCompileInputs.cache
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.IoC\obj\Debug\net6.0\CreditRelease.Infra.IoC.dll
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.IoC\obj\Debug\net6.0\refint\CreditRelease.Infra.IoC.dll
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.IoC\obj\Debug\net6.0\CreditRelease.Infra.IoC.pdb
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.IoC\obj\Debug\net6.0\ref\CreditRelease.Infra.IoC.dll
