@@ -1,5 +1,5 @@
 ﻿using CreditRelease.Domain.Interfaces.Repositories;
-using CreditRelease.Infra.Context.Interfaces.Repositories;
+using CreditRelease.Application.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CreditRelease.Infra.IoC.DI

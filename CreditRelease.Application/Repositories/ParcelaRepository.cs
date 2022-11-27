@@ -1,4 +1,4 @@
-﻿namespace CreditRelease.Infra.Context.Interfaces.Repositories
+﻿namespace CreditRelease.Application.Repositories
 {
     public class ParcelaRepository : IParcelaRepository
     {

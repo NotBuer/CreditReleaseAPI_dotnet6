@@ -123,7 +123,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Clã Dev\\ProcessamentoLiberaçãoCrédito\\CreditRelease.Domain\\CreditRelease.Domain.csproj": {
+                "projectPath": "D:\\Clã Dev\\ProcessamentoLiberaçãoCrédito\\CreditRelease.Domain\\CreditRelease.Domain.csproj"
+              },
+              "D:\\Clã Dev\\ProcessamentoLiberaçãoCrédito\\CreditRelease.Infra.Context\\CreditRelease.Infra.Context.csproj": {
+                "projectPath": "D:\\Clã Dev\\ProcessamentoLiberaçãoCrédito\\CreditRelease.Infra.Context\\CreditRelease.Infra.Context.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -135,6 +142,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -313,6 +326,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "D:\\Clã Dev\\ProcessamentoLiberaçãoCrédito\\CreditRelease.Application\\CreditRelease.Application.csproj": {
+                "projectPath": "D:\\Clã Dev\\ProcessamentoLiberaçãoCrédito\\CreditRelease.Application\\CreditRelease.Application.csproj"
+              },
               "D:\\Clã Dev\\ProcessamentoLiberaçãoCrédito\\CreditRelease.Domain\\CreditRelease.Domain.csproj": {
                 "projectPath": "D:\\Clã Dev\\ProcessamentoLiberaçãoCrédito\\CreditRelease.Domain\\CreditRelease.Domain.csproj"
               },

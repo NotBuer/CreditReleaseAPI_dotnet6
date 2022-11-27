@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CreditRelease.Application\CreditRelease.Application.csproj" />
     <ProjectReference Include="..\CreditRelease.Domain\CreditRelease.Domain.csproj" />
     <ProjectReference Include="..\CreditRelease.Infra.Context\CreditRelease.Infra.Context.csproj" />
   </ItemGroup>

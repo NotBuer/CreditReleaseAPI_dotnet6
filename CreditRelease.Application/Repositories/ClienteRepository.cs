@@ -1,10 +1,10 @@
-﻿namespace CreditRelease.Infra.Context.Interfaces.Repositories
+﻿namespace CreditRelease.Application.Repositories
 {
     public class ClienteRepository : IClienteRepository
     {
         private readonly AppDbContext _context;
 
-        public ClienteRepository(AppDbContext context) => 
+        public ClienteRepository(AppDbContext context) =>
             _context = context;
 
         public void CreateCliente(Cliente cliente)
@@ -27,7 +27,7 @@
             _context.SaveChanges();
         }
 
-        public async Task<Cliente?> GetClienteById(int id) => 
+        public async Task<Cliente?> GetClienteById(int id) =>
             await _context.Clientes.SingleOrDefaultAsync(x => x.Id == id);
 
         public async Task<List<Cliente>> GetAllClientes()

@@ -10,3 +10,8 @@ D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Application\obj\Debug
 D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Application\obj\Debug\net6.0\refint\CreditRelease.Application.dll
 D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Application\obj\Debug\net6.0\CreditRelease.Application.pdb
 D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Application\obj\Debug\net6.0\ref\CreditRelease.Application.dll
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Application\bin\Debug\net6.0\CreditRelease.Domain.dll
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Application\bin\Debug\net6.0\CreditRelease.Infra.Context.dll
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Application\bin\Debug\net6.0\CreditRelease.Domain.pdb
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Application\bin\Debug\net6.0\CreditRelease.Infra.Context.pdb
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Application\obj\Debug\net6.0\CreditRelease.Application.csproj.CopyComplete

@@ -1,6 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-
-namespace CreditRelease.Infra.Context.Interfaces.Repositories
+﻿namespace CreditRelease.Application.Repositories
 {
     public class FinanciamentoRepository : IFinanciamentoRepository
     {
