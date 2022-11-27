@@ -2,11 +2,13 @@
 {
     public class Cliente : IEntity
     {
-        public int Id { get; set; }
-        public string? Nome { get; set; }
-        public string? CPF { get; set; }
-        public string? UF { get; set; }
-        public long Celular { get; set; }
+        [Required] public int Id { get; set; }
+        [Required] public string? Nome { get; set; }
+        [Required] public string? CPF { get; set; }
+        [Required] public string? UF { get; set; }
+        [Required] public long Celular { get; set; }
+
+        [JsonIgnore]
         public ICollection<Financiamento>? Financiamentos { get; set; }
     }
 }

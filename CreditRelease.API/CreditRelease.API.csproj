@@ -19,10 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Endpoints\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\CreditRelease.Application\CreditRelease.Application.csproj" />
     <ProjectReference Include="..\CreditRelease.Infra.Context\CreditRelease.Infra.Context.csproj" />
     <ProjectReference Include="..\CreditRelease.Infra.IoC\CreditRelease.Infra.IoC.csproj" />

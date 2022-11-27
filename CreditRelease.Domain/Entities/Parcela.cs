@@ -2,12 +2,14 @@
 {
     public class Parcela : IEntity
     {
-        public int Id { get; set; }
-        public int IdFinanciamento { get; set; }
-        public byte NumeroDaParcela { get; set; }
-        public decimal ValorDaParcela { get; set; }
-        public DateTime DataVencimento { get; set; }
-        public DateTime DataPagamento { get; set; }
+        [Required] public int Id { get; set; }
+        [Required] public int IdFinanciamento { get; set; }
+        [Required] public byte NumeroDaParcela { get; set; }
+        [Required] public decimal ValorDaParcela { get; set; }
+        [Required] public DateTime DataVencimento { get; set; }
+        [Required] public DateTime DataPagamento { get; set; }
+
+        [JsonIgnore]
         public Financiamento? Financiamento { get; set; }
     }
 }

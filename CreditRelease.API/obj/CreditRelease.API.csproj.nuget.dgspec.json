@@ -312,7 +312,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Clã Dev\\ProcessamentoLiberaçãoCrédito\\CreditRelease.Domain\\CreditRelease.Domain.csproj": {
+                "projectPath": "D:\\Clã Dev\\ProcessamentoLiberaçãoCrédito\\CreditRelease.Domain\\CreditRelease.Domain.csproj"
+              },
+              "D:\\Clã Dev\\ProcessamentoLiberaçãoCrédito\\CreditRelease.Infra.Context\\CreditRelease.Infra.Context.csproj": {
+                "projectPath": "D:\\Clã Dev\\ProcessamentoLiberaçãoCrédito\\CreditRelease.Infra.Context\\CreditRelease.Infra.Context.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

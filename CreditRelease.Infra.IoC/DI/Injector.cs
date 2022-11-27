@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using CreditRelease.Domain.Interfaces.Repositories;
+using CreditRelease.Infra.Context.Interfaces.Repositories;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace CreditRelease.Infra.IoC.DI
 {
@@ -6,7 +8,9 @@ namespace CreditRelease.Infra.IoC.DI
     {
         public static void AddDependencyInjection(this IServiceCollection services)
         {
-
+            services.AddScoped<ClienteRepository>();
+            services.AddScoped<FinanciamentoRepository>();
+            services.AddScoped<ParcelaRepository>();
         }
     }
 }

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CreditRelease.API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221127040730_setup")]
+    [Migration("20221127063246_setup")]
     partial class setup
     {
         /// <inheritdoc />
@@ -125,7 +125,7 @@ namespace CreditRelease.API.Migrations
                     b.HasOne("CreditRelease.Domain.Entities.Cliente", "Cliente")
                         .WithMany("Financiamentos")
                         .HasForeignKey("IdCliente")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Cliente");
@@ -136,7 +136,7 @@ namespace CreditRelease.API.Migrations
                     b.HasOne("CreditRelease.Domain.Entities.Financiamento", "Financiamento")
                         .WithMany("Parcelas")
                         .HasForeignKey("IdFinanciamento")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Financiamento");

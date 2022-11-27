@@ -1,4 +1,4 @@
-﻿namespace CreditRelease.Domain.Common
+﻿namespace CreditRelease.Domain.Interfaces.Common
 {
     public interface IEntity
     {
