@@ -1,4 +1,6 @@
-﻿namespace CreditRelease.API.Endpoints
+﻿using Microsoft.IdentityModel.Tokens;
+
+namespace CreditRelease.API.Endpoints
 {
     public static class ParcelaEndpoints
     {
@@ -12,6 +14,8 @@
             Post(app);
             GetById(app);
             GetAll(app);
+            GetUniqueByFinanciamentoId(app);
+            GetAllByFinanciamentoId(app);
             Put(app);
             Delete(app);
         }
@@ -45,13 +49,41 @@
             app.MapGet(Utils.Route_Parcela_GetAll, async (ParcelaRepository _repository) =>
             {
                 List<Parcela> parcela = await _repository.GetAllParcelas();
-                if (parcela.Count > 0)
+                if (!parcela.IsNullOrEmpty())
                     return Results.Ok(parcela);
                 else
                     return Results.NoContent();
             })
                 .Produces<Parcela>(StatusCodes.Status200OK)
                 .WithName(nameof(GetAll) + nameof(Parcela))
+                .WithTags(nameof(Parcela));
+        }
+
+        private static void GetUniqueByFinanciamentoId(WebApplication app)
+        {
+            app.MapGet(Utils.Route_Parcela_GetUniqueParcelaByFinanciamentoID, async (ParcelaRepository _repository, int id, int idFinanciamento) =>
+            {
+                Parcela? parcela = await _repository.GetUniqueParcelaByFinanciamentoId(id, idFinanciamento);
+                if (parcela != null)
+                    return Results.Ok(parcela);
+                else return Results.NoContent();
+            })
+                .Produces<Parcela>(StatusCodes.Status200OK)
+                .WithName(nameof(GetUniqueByFinanciamentoId) + nameof(Parcela))
+                .WithTags(nameof(Parcela));
+        }
+
+        private static void GetAllByFinanciamentoId(WebApplication app)
+        {
+            app.MapGet(Utils.Route_Parcela_GetParcelasByFinanciamentoID, async (ParcelaRepository _repository, int idFinanciamento) =>
+            {
+                List<Parcela> parcelas = await _repository.GetAllParcelasByFinanciamentoId(idFinanciamento);
+                if (!parcelas.IsNullOrEmpty())
+                    return Results.Ok(parcelas);
+                else return Results.NoContent();
+            })
+                .Produces<Parcela>(StatusCodes.Status200OK)
+                .WithName(nameof(GetAllByFinanciamentoId) + nameof(Parcela))
                 .WithTags(nameof(Parcela));
         }
 

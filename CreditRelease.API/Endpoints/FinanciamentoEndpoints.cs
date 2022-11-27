@@ -1,4 +1,6 @@
-﻿namespace CreditRelease.API.Endpoints
+﻿using Microsoft.IdentityModel.Tokens;
+
+namespace CreditRelease.API.Endpoints
 {
     public static class FinanciamentoEndpoints
     {
@@ -12,6 +14,8 @@
             Post(app);
             GetById(app);
             GetAll(app);
+            GetUniqueByClienteId(app);
+            GetAllByClienteId(app);
             Put(app);
             Delete(app);
         }
@@ -44,14 +48,43 @@
         {
             app.MapGet(Utils.Route_Financiamento_GetAll, async (FinanciamentoRepository _repository) =>
             {
-                List<Financiamento> financiamento = await _repository.GetAllFinanciamentos();
-                if (financiamento.Count > 0)
-                    return Results.Ok(financiamento);
+                List<Financiamento> financiamentos = await _repository.GetAllFinanciamentos();
+                if (!financiamentos.IsNullOrEmpty())
+                    return Results.Ok(financiamentos);
                 else
                     return Results.NoContent();
             })
                 .Produces<Financiamento>(StatusCodes.Status200OK)
                 .WithName(nameof(GetAll) + nameof(Financiamento))
+                .WithTags(nameof(Financiamento));
+        }
+
+        private static void GetUniqueByClienteId(WebApplication app)
+        {
+            app.MapGet(Utils.Route_Financiamento_GetUniqueFinanciamentoByClienteID, async (FinanciamentoRepository _repository, int id, int idCliente) =>
+            {
+                Financiamento? financiamento = await _repository.GetUniqueFinanciamentoByClienteId(id, idCliente);
+                if (financiamento != null)
+                    return Results.Ok(financiamento);
+                else return Results.NoContent();
+            })
+                .Produces<Financiamento>(StatusCodes.Status200OK)
+                .WithName(nameof(GetUniqueByClienteId) + nameof(Financiamento))
+                .WithTags(nameof(Financiamento));
+        }
+
+        private static void GetAllByClienteId(WebApplication app)
+        {
+            app.MapGet(Utils.Route_Financiamento_GetFinanciamentosByClienteID, async (FinanciamentoRepository _repository, int idCliente) =>
+            {
+                List<Financiamento> financiamentos = await _repository.GetAllFinanciamentosByClienteId(idCliente);
+                if (!financiamentos.IsNullOrEmpty())
+                    return Results.Ok(financiamentos);
+                else
+                    return Results.NoContent();
+            })
+                .Produces<Financiamento>(StatusCodes.Status200OK)
+                .WithName(nameof(GetAllByClienteId) + nameof(Financiamento))
                 .WithTags(nameof(Financiamento));
         }
 

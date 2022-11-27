@@ -34,5 +34,15 @@
         {
             return await _context.Parcelas.ToListAsync();
         }
+
+        public async Task<Parcela?> GetUniqueParcelaByFinanciamentoId(int id, int idFinanciamento)
+        {
+            return await _context.Parcelas.Where(x => x.IdFinanciamento == idFinanciamento).Where(x => x.Id == id).FirstOrDefaultAsync();
+        }
+
+        public async Task<List<Parcela>> GetAllParcelasByFinanciamentoId(int idFinanciamento)
+        {
+            return await _context.Parcelas.Where(x => x.IdFinanciamento == idFinanciamento).ToListAsync();
+        }
     }
 }

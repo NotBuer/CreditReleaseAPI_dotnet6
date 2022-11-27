@@ -7,5 +7,7 @@
         void DeleteParcela(int id);
         Task<Parcela?> GetParcelaById(int id);
         Task<List<Parcela>> GetAllParcelas();
+        Task<Parcela?> GetUniqueParcelaByFinanciamentoId(int id, int idFinanciamento);
+        Task<List<Parcela>> GetAllParcelasByFinanciamentoId(int idFinanciamento);
     }
 }

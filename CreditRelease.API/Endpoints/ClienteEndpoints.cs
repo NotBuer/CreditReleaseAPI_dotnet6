@@ -1,4 +1,6 @@
-﻿namespace CreditRelease.API.Endpoints
+﻿using Microsoft.IdentityModel.Tokens;
+
+namespace CreditRelease.API.Endpoints
 {
     public static class ClienteEndpoints
     {
@@ -46,7 +48,7 @@
             app.MapGet(Utils.Route_Cliente_GetAll, async (ClienteRepository _repository) =>
             {
                 List<Cliente> clientes = await _repository.GetAllClientes();
-                if (clientes.Count > 0)
+                if (!clientes.IsNullOrEmpty())
                     return Results.Ok(clientes);
                 else 
                     return Results.NoContent();

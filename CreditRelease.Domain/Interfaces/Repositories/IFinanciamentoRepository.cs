@@ -7,5 +7,7 @@
         void DeleteFinanciamento(int id);
         Task<Financiamento?> GetFinanciamentoById(int id);
         Task<List<Financiamento>> GetAllFinanciamentos();
+        Task<Financiamento?> GetUniqueFinanciamentoByClienteId(int id, int idCliente);
+        Task<List<Financiamento>> GetAllFinanciamentosByClienteId(int idCliente);
     }
 }

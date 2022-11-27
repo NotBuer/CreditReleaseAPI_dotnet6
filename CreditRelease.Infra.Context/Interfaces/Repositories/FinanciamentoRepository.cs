@@ -1,4 +1,6 @@
-﻿namespace CreditRelease.Infra.Context.Interfaces.Repositories
+﻿using System.Reflection.Metadata.Ecma335;
+
+namespace CreditRelease.Infra.Context.Interfaces.Repositories
 {
     public class FinanciamentoRepository : IFinanciamentoRepository
     {
@@ -33,6 +35,16 @@
         public async Task<List<Financiamento>> GetAllFinanciamentos()
         {
             return await _context.Financiamentos.ToListAsync();
+        }
+
+        public async Task<Financiamento?> GetUniqueFinanciamentoByClienteId(int id, int idCliente)
+        {
+            return await _context.Financiamentos.Where(x => x.IdCliente == idCliente).Where(x => x.Id == id).FirstOrDefaultAsync();
+        }
+
+        public async Task<List<Financiamento>> GetAllFinanciamentosByClienteId(int idCliente)
+        {
+            return await _context.Financiamentos.Where(x => x.IdCliente == idCliente).ToListAsync();
         }
     }
 }
