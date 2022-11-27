@@ -47,7 +47,7 @@ namespace CreditRelease.API.Migrations
                         column: x => x.IdCliente,
                         principalTable: "Cliente",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -70,7 +70,7 @@ namespace CreditRelease.API.Migrations
                         column: x => x.IdFinanciamento,
                         principalTable: "Financiamento",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(

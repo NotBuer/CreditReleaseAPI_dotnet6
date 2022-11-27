@@ -122,7 +122,7 @@ namespace CreditRelease.API.Migrations
                     b.HasOne("CreditRelease.Domain.Entities.Cliente", "Cliente")
                         .WithMany("Financiamentos")
                         .HasForeignKey("IdCliente")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Cliente");
@@ -133,7 +133,7 @@ namespace CreditRelease.API.Migrations
                     b.HasOne("CreditRelease.Domain.Entities.Financiamento", "Financiamento")
                         .WithMany("Parcelas")
                         .HasForeignKey("IdFinanciamento")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Financiamento");

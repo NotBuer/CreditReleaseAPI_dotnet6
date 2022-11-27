@@ -1,6 +1,4 @@
-﻿using Utils = CreditRelease.API.Utility.EndpointsUtils;
-
-namespace CreditRelease.API.Endpoints
+﻿namespace CreditRelease.API.Endpoints
 {
     public static class ClienteEndpoints
     {

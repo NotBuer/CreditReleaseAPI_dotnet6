@@ -10,3 +10,5 @@ global using CreditRelease.Application.Common;
 global using CreditRelease.Infra.IoC.DI;
 global using CreditRelease.Infra.Context.Interfaces.Repositories;
 global using CreditRelease.Domain.Entities;
+
+global using Utils = CreditRelease.API.Utility.EndpointsUtils;

@@ -8,7 +8,6 @@ services.AddSwaggerGen();
 services.AddFluentValidationRulesToSwagger();
 
 services.AddDependencyInjection();
-services.AddAutoMapper(BaseConfig.Assemblies);
 
 var app = builder.Build();
 

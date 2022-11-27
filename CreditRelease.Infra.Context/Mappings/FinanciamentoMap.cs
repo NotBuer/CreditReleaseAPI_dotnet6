@@ -24,8 +24,7 @@
 
             builder.HasMany(x => x.Parcelas)
                 .WithOne(x => x.Financiamento)
-                .HasForeignKey(x => x.IdFinanciamento)
-                .OnDelete(DeleteBehavior.Restrict);
+                .HasForeignKey(x => x.IdFinanciamento);
         }
     }
 }
