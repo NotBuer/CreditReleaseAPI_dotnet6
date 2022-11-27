@@ -1,19 +1,20 @@
 var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+var services = builder.Services;
 
 builder.BuilderAddDbContext();
 
+services.AddEndpointsApiExplorer();
+services.AddSwaggerGen();
+services.AddFluentValidationRulesToSwagger();
+
+services.AddDependencyInjection();
+services.AddAutoMapper(BaseConfig.Assemblies);
+
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
-// TODO: Map Endpoints
-// TODO: Add Dependency Injection
+app.MapEndpoints();
 app.Run();

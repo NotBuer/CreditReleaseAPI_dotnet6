@@ -13,3 +13,5 @@ D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Context\obj\Deb
 D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Context\bin\Debug\net6.0\CreditRelease.Domain.dll
 D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Context\bin\Debug\net6.0\CreditRelease.Domain.pdb
 D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Context\obj\Debug\net6.0\CreditRelease.Infra.Context.csproj.CopyComplete
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Context\bin\Debug\net6.0\CreditRelease.Infra.Context.runtimeconfig.json
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Context\obj\Debug\net6.0\CreditRelease.Infra.Context.genruntimeconfig.cache

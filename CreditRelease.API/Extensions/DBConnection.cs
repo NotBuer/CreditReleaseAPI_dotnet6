@@ -7,18 +7,11 @@ namespace CreditRelease.API.Extensions
     {
 
         private const string DEFAULT_CONNECTION = "Context";
-        private const string DEVELOPMENT_CONNECTION = "ContextDev";
-        private const string PRODUCTION_CONNECTION = "ContextProd";
 
         public static WebApplicationBuilder BuilderAddDbContext(this WebApplicationBuilder builder)
         {
-            string? connectionString;
-
-            connectionString = builder.Environment.IsDevelopment() ?
-                builder.Configuration.GetConnectionString(DEVELOPMENT_CONNECTION) :
-                (builder.Environment.IsProduction() ? builder.Configuration.GetConnectionString(PRODUCTION_CONNECTION) : builder.Configuration.GetConnectionString(DEFAULT_CONNECTION));
-
-            builder.Services.AddDbContext<Context>(opt => opt.UseSqlServer(connectionString));
+            string? connectionString = builder.Configuration.GetConnectionString(DEFAULT_CONNECTION);
+            builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(connectionString, x => x.MigrationsAssembly("CreditRelease.API")));
             return builder;
         }
 

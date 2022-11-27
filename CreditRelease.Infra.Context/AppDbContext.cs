@@ -1,8 +1,8 @@
 ﻿namespace CreditRelease.Infra.Context
 {
-    public class Context : DbContext
+    public class AppDbContext : DbContext
     {
-        public Context(DbContextOptions options) : base(options)
+        public AppDbContext(DbContextOptions options) : base(options)
         {
         }
 

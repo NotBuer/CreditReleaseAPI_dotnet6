@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7IulPY1o6MvUrpVt/pegJY++e7TsqTNyGk8HQzwQ8RLDt/9V8yTlQRRpM4ztuWvjGA/MXuhjSaPWZptsbhG5Jw==",
+  "dgSpecHash": "dU0j4AlG9lFqsQpjDKDWO+Hm1F1SSkIkcNTLJqqEcdysvdprGByY5YB2JKxup2B+PZNA1WlqN4ww6VDOToOOJw==",
   "success": true,
   "projectFilePath": "D:\\Clã Dev\\ProcessamentoLiberaçãoCrédito\\CreditRelease.Infra.IoC\\CreditRelease.Infra.IoC.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\rodri\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
