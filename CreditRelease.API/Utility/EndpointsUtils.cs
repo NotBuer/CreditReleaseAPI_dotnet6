@@ -20,11 +20,15 @@
 
         public const string BASE_Parcela = "/Parcela";
         public const string Route_Parcela_POST = $"{BASE_Parcela}/CreateParcela";
+        public const string Route_Parcela_POSTMany = $"{BASE_Parcela}/CreateParcela/PostMany";
         public const string Route_Parcela_GetByID = $"{BASE_Parcela}/GetParcela/{{id}}";
         public const string Route_Parcela_GetAll = $"{BASE_Parcela}/GetParcela";
         public const string Route_Parcela_GetUniqueParcelaByFinanciamentoID = $"{BASE_Parcela}/GetParcela/ByFinanciamento/Unique/{{id}}/{{idFinanciamento}}";
         public const string Route_Parcela_GetParcelasByFinanciamentoID = $"{BASE_Parcela}/GetParcela/ByFinanciamento/All/{{idFinanciamento}}";
         public const string Route_Parcela_PUT = $"{BASE_Parcela}/UpdateParcela/{{id}}";
         public const string Route_Parcela_DELETE = $"{BASE_Parcela}/DeleteParcela/{{id}}";
+
+        public const string BASE_ProcessCredit = "/Credit";
+        public const string Route_ProcessCredit_POST = $"{BASE_ProcessCredit}/ProcessCreditRelease";
     }
 }

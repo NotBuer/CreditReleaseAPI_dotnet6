@@ -1,6 +1,7 @@
 ﻿using CreditRelease.Domain.Interfaces.Repositories;
 using CreditRelease.Application.Repositories;
 using Microsoft.Extensions.DependencyInjection;
+using CreditRelease.Application.Services;
 
 namespace CreditRelease.Infra.IoC.DI
 {
@@ -11,6 +12,8 @@ namespace CreditRelease.Infra.IoC.DI
             services.AddScoped<ClienteRepository>();
             services.AddScoped<FinanciamentoRepository>();
             services.AddScoped<ParcelaRepository>();
+
+            services.AddScoped<ReleaseCreditProcessingService>();
         }
     }
 }

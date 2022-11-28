@@ -12,6 +12,7 @@ namespace CreditRelease.API.Endpoints
         private static void ParcelaEndpointsMap(WebApplication app)
         {
             Post(app);
+            PostMany(app);
             GetById(app);
             GetAll(app);
             GetUniqueByFinanciamentoId(app);
@@ -29,6 +30,18 @@ namespace CreditRelease.API.Endpoints
             })
                 .Produces<Parcela>(StatusCodes.Status201Created)
                 .WithName(nameof(Post) + nameof(Parcela))
+                .WithTags(nameof(Parcela));
+        }
+
+        private static void PostMany(WebApplication app)
+        {
+            app.MapPost(Utils.Route_Parcela_POSTMany, async (ParcelaRepository _repository, ICollection<Parcela> parcelas) =>
+            {
+                await _repository.CreateManyParcelas(parcelas);
+                return Results.Created(Utils.Route_Parcela_POSTMany, parcelas);
+            })
+                .Produces<ICollection<Parcela>>(StatusCodes.Status201Created)
+                .WithName(nameof(PostMany) + nameof(Parcela))
                 .WithTags(nameof(Parcela));
         }
 

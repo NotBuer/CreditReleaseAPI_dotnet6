@@ -4,14 +4,11 @@
     {
         public void Configure(EntityTypeBuilder<Financiamento> builder)
         {
-            builder.ToTable(nameof(Financiamento))
+            builder.ToTable(ContextUtils.TABLE_NAME_Financiamentos)
                 .HasKey(x => x.Id);
 
             builder.Property(x => x.Id)
                 .ValueGeneratedOnAdd();
-
-            builder.Property(x => x.CPF)
-                .HasMaxLength(11).IsRequired();
 
             builder.Property(x => x.TipoFinanciamento)
                 .IsRequired();
@@ -19,7 +16,19 @@
             builder.Property(x => x.ValorTotal)
                 .IsRequired();
 
-            builder.Property(x => x.UltimoVencimento)
+            builder.Property(x => x.ValorTotalComTaxa)
+                .IsRequired();
+
+            builder.Property(x => x.ValorTaxa)
+                .IsRequired();
+
+            builder.Property(x => x.QuantidadeParcelas)
+                .IsRequired();
+
+            builder.Property(x => x.DataContratacao)
+                .IsRequired();
+
+            builder.Property(x => x.VencimentoPrimeiraParcela)
                 .IsRequired();
 
             builder.HasMany(x => x.Parcelas)

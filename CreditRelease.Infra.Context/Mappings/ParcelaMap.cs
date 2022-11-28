@@ -4,7 +4,7 @@
     {
         public void Configure(EntityTypeBuilder<Parcela> builder)
         {
-            builder.ToTable(nameof(Parcela))
+            builder.ToTable(ContextUtils.TABLE_NAME_Parcelas)
                 .HasKey(x => x.Id);
 
             builder.Property(x => x.Id)
@@ -17,9 +17,6 @@
                 .IsRequired();
 
             builder.Property(x => x.DataVencimento)
-                .IsRequired();
-
-            builder.Property(x => x.DataPagamento)
                 .IsRequired();
         }
     }

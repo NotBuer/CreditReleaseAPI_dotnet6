@@ -51,7 +51,7 @@ namespace CreditRelease.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Cliente", (string)null);
+                    b.ToTable("Clientes", (string)null);
                 });
 
             modelBuilder.Entity("CreditRelease.Domain.Entities.Financiamento", b =>
@@ -63,28 +63,43 @@ namespace CreditRelease.API.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CPF")
-                        .IsRequired()
-                        .HasMaxLength(11)
-                        .HasColumnType("nvarchar(11)");
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DataContratacao")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("IdCliente")
                         .HasColumnType("int");
 
-                    b.Property<string>("TipoFinanciamento")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<byte>("QuantidadeParcelas")
+                        .HasColumnType("tinyint");
 
-                    b.Property<DateTime>("UltimoVencimento")
+                    b.Property<byte>("StatusCredito")
+                        .HasColumnType("tinyint");
+
+                    b.Property<byte>("TipoFinanciamento")
+                        .HasColumnType("tinyint");
+
+                    b.Property<DateTime?>("UltimoVencimento")
                         .HasColumnType("datetime2");
+
+                    b.Property<decimal>("ValorTaxa")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<decimal>("ValorTotal")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("ValorTotalComTaxa")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("VencimentoPrimeiraParcela")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
                     b.HasIndex("IdCliente");
 
-                    b.ToTable("Financiamento", (string)null);
+                    b.ToTable("Financiamentos", (string)null);
                 });
 
             modelBuilder.Entity("CreditRelease.Domain.Entities.Parcela", b =>
@@ -95,7 +110,7 @@ namespace CreditRelease.API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("DataPagamento")
+                    b.Property<DateTime?>("DataPagamento")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DataVencimento")
@@ -114,7 +129,7 @@ namespace CreditRelease.API.Migrations
 
                     b.HasIndex("IdFinanciamento");
 
-                    b.ToTable("Parcela", (string)null);
+                    b.ToTable("Parcelas", (string)null);
                 });
 
             modelBuilder.Entity("CreditRelease.Domain.Entities.Financiamento", b =>

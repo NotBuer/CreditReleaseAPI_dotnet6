@@ -2,6 +2,6 @@
 {
     public interface IReleaseCreditProcessingService
     {
-
+        Task<Financiamento> CreateAndProcessFinanciamentoForCliente(int idCliente, Financiamento financiamento);
     }
 }

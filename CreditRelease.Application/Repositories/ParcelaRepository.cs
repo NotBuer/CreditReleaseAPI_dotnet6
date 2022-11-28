@@ -13,6 +13,12 @@
             _context.SaveChanges();
         }
 
+        public async Task CreateManyParcelas(ICollection<Parcela> parcelas)
+        {
+            _context.Parcelas.AddRange(parcelas);
+            await _context.SaveChangesAsync();
+        }
+
         public void UpdateParcela(Parcela parcela)
         {
             _context.Parcelas.Update(parcela);

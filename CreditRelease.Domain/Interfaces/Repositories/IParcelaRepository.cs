@@ -3,6 +3,7 @@
     public interface IParcelaRepository
     {
         void CreateParcela(Parcela parcela);
+        Task CreateManyParcelas(ICollection<Parcela> parcelas);
         void UpdateParcela(Parcela parcela);
         void DeleteParcela(int id);
         Task<Parcela?> GetParcelaById(int id);

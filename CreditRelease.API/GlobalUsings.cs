@@ -8,6 +8,7 @@ global using CreditRelease.API.Utility;
 
 global using CreditRelease.Application.Common;
 global using CreditRelease.Application.Repositories;
+global using CreditRelease.Application.Services;
 global using CreditRelease.Infra.IoC.DI;
 global using CreditRelease.Domain.Entities;
 

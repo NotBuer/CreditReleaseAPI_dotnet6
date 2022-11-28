@@ -9,6 +9,7 @@ namespace CreditRelease.API.Mapping
             ClienteEndpoints.Map(app);
             FinanciamentoEndpoints.Map(app);
             ParcelaEndpoints.Map(app);
+            ReleaseCreditProcessingEndpoints.Map(app);
         }
     }
 }

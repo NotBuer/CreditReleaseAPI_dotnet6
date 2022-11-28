@@ -7,9 +7,8 @@
         [Required] public byte NumeroDaParcela { get; set; }
         [Required] public decimal ValorDaParcela { get; set; }
         [Required] public DateTime DataVencimento { get; set; }
-        [Required] public DateTime DataPagamento { get; set; }
+        public DateTime? DataPagamento { get; set; }
 
-        [JsonIgnore]
         public Financiamento? Financiamento { get; set; }
     }
 }

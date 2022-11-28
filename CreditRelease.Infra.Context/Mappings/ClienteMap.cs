@@ -4,7 +4,7 @@
     {
         public void Configure(EntityTypeBuilder<Cliente> builder)
         {
-            builder.ToTable(nameof(Cliente))
+            builder.ToTable(ContextUtils.TABLE_NAME_Clientes)
                 .HasKey(x => x.Id);
 
             builder.Property(x => x.Id)
