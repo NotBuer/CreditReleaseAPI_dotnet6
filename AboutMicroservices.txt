@@ -1,0 +1,2 @@
+-Microserviços são uma abordagem de arquitetura no desenvolvimento de software, são pequenos serviços independentes
+e limitados a uma única função, que se comunicam usando APIS bem definidas.
