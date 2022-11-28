@@ -1,4 +1,4 @@
-** BANK CREDIT RELEASE PROCESSING **
+** BANK CREDIT RELEASE PROCESSING API (.NET 6) ** 
 
 -------------------------------------------------------------------------------------------------------
 
