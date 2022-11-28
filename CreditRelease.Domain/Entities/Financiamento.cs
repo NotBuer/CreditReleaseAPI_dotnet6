@@ -10,15 +10,17 @@ namespace CreditRelease.Domain.Entities
         [Required] public TypeCreditEnum TipoFinanciamento { get; set; }
         [Required] public decimal ValorTotal { get; set; }
         public decimal ValorTotalComTaxa { get; set; }
-        [Required] public decimal ValorTaxa { get; set; }
+        public decimal ValorTaxa { get; set; }
         public StatusCreditEnum StatusCredito { get; set; }
         [Required] public byte QuantidadeParcelas { get; set; }
         [Required] public DateTime DataContratacao { get; set; }
         [Required] public DateTime VencimentoPrimeiraParcela { get; set; }
         public DateTime? UltimoVencimento { get; set; }
 
+        [JsonIgnore]
         public ICollection<Parcela>? Parcelas { get; set; }
 
+        [JsonIgnore]
         public Cliente? Cliente { get; set; }
     }
 }

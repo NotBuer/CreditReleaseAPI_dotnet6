@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CreditRelease.API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221128163111_setup")]
+    [Migration("20221128175438_setup")]
     partial class setup
     {
         /// <inheritdoc />
@@ -124,6 +124,9 @@ namespace CreditRelease.API.Migrations
 
                     b.Property<byte>("NumeroDaParcela")
                         .HasColumnType("tinyint");
+
+                    b.Property<bool>("ParcelaPaga")
+                        .HasColumnType("bit");
 
                     b.Property<decimal>("ValorDaParcela")
                         .HasColumnType("decimal(18,2)");

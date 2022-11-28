@@ -1,18 +1,13 @@
-﻿using Microsoft.Extensions.Logging.Abstractions;
-using System.Reflection.Metadata;
-
-namespace CreditRelease.Application.Services
+﻿namespace CreditRelease.Application.Services
 {
     public class ReleaseCreditProcessingService : IReleaseCreditProcessingService
     {
-        private readonly AppDbContext _context;
         private readonly ClienteRepository _clienteRepository;
         private readonly FinanciamentoRepository _financiamentoRepository;
         private readonly ParcelaRepository _parcelaRepository;
 
-        public ReleaseCreditProcessingService(AppDbContext context, ClienteRepository clienteRepository, FinanciamentoRepository financiamentoRepository, ParcelaRepository parcelaRepository)
+        public ReleaseCreditProcessingService(ClienteRepository clienteRepository, FinanciamentoRepository financiamentoRepository, ParcelaRepository parcelaRepository)
         {
-            _context = context;
             _clienteRepository = clienteRepository;
             _financiamentoRepository = financiamentoRepository;
             _parcelaRepository = parcelaRepository;
@@ -20,6 +15,9 @@ namespace CreditRelease.Application.Services
 
         public async Task<Financiamento> CreateAndProcessFinanciamentoForCliente(int idCliente, Financiamento financiamento)
         {
+            // Insert the financiamento data in the DbSet.
+            _financiamentoRepository.CreateFinanciamento(financiamento);
+
             // Validate financiamento input parameters based on business logic.
             if (financiamento.ValorTotal > BusinessRules.MAX_ALLOWED_VALUE)
                 financiamento.StatusCredito = StatusCreditEnum.Recused;
@@ -39,9 +37,6 @@ namespace CreditRelease.Application.Services
             financiamento.ValorTaxa = BusinessRules.ReturnTaxForSpecificCreditType(financiamento.TipoFinanciamento);
             financiamento.ValorTotalComTaxa = ((financiamento.ValorTotal / 100) * financiamento.ValorTaxa) + financiamento.ValorTotal;
 
-            // Insert the financiamento data in the DbSet.
-            _financiamentoRepository.CreateFinanciamento(financiamento);
-
             if (financiamento.StatusCredito != StatusCreditEnum.Recused)
             {
                 // Validate parcelas input parameters based on business logic.
@@ -59,6 +54,7 @@ namespace CreditRelease.Application.Services
                         primeiraParcela.ValorDaParcela = valorParcela;
                         primeiraParcela.DataVencimento = financiamento.VencimentoPrimeiraParcela;
                         primeiraParcela.DataPagamento = null;
+                        primeiraParcela.ParcelaPaga = false;
 
                         parcelasParaAdicionar.Add(primeiraParcela);
                         continue;
@@ -71,6 +67,7 @@ namespace CreditRelease.Application.Services
                         ValorDaParcela = valorParcela,
                         DataVencimento = primeiraParcela.DataVencimento.AddMonths(i),
                         DataPagamento = null,
+                        ParcelaPaga = false,
                     };
 
                     parcelasParaAdicionar.Add(parcela);

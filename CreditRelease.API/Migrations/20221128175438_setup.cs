@@ -66,7 +66,8 @@ namespace CreditRelease.API.Migrations
                     NumeroDaParcela = table.Column<byte>(type: "tinyint", nullable: false),
                     ValorDaParcela = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     DataVencimento = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DataPagamento = table.Column<DateTime>(type: "datetime2", nullable: true)
+                    DataPagamento = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    ParcelaPaga = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {

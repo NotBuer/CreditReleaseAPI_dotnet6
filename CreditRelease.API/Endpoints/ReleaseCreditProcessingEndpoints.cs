@@ -16,12 +16,14 @@
         {
             app.MapPost(Utils.Route_ProcessCredit_POST, async (ReleaseCreditProcessingService _service, int idCliente, Financiamento financiamento) =>
             {
-                await _service.CreateAndProcessFinanciamentoForCliente(idCliente, financiamento);
-                return Results.Created(Utils.Route_ProcessCredit_POST, financiamento);
+                Financiamento result = await _service.CreateAndProcessFinanciamentoForCliente(idCliente, financiamento);
+                if (result != null)
+                    return Results.Created(Utils.Route_ProcessCredit_POST, result);
+                else return Results.BadRequest(result);
             })
                 .Produces<Financiamento>(StatusCodes.Status201Created)
-                .WithName(nameof(Post) + nameof(Financiamento))
-                .WithTags(nameof(Financiamento));
+                .WithName(nameof(Post) + "CreateAndProcessFinanciamentoForCliente")
+                .WithTags(nameof(ReleaseCreditProcessingService));
         }
     }
 }

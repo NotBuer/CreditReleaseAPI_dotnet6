@@ -8,7 +8,9 @@
         [Required] public decimal ValorDaParcela { get; set; }
         [Required] public DateTime DataVencimento { get; set; }
         public DateTime? DataPagamento { get; set; }
+        [Required] public bool ParcelaPaga { get; set; } = false;
 
+        [JsonIgnore]
         public Financiamento? Financiamento { get; set; }
     }
 }

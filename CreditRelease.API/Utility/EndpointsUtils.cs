@@ -29,6 +29,6 @@
         public const string Route_Parcela_DELETE = $"{BASE_Parcela}/DeleteParcela/{{id}}";
 
         public const string BASE_ProcessCredit = "/Credit";
-        public const string Route_ProcessCredit_POST = $"{BASE_ProcessCredit}/ProcessCreditRelease";
+        public const string Route_ProcessCredit_POST = $"{BASE_ProcessCredit}/ProcessCredit";
     }
 }

@@ -18,6 +18,9 @@
 
             builder.Property(x => x.DataVencimento)
                 .IsRequired();
+
+            builder.Property(x => x.ParcelaPaga)
+                .IsRequired();
         }
     }
 }

@@ -8,6 +8,7 @@
         [Required] public string? UF { get; set; }
         [Required] public long Celular { get; set; }
 
+        [JsonIgnore]
         public ICollection<Financiamento>? Financiamentos { get; set; }
     }
 }

@@ -122,6 +122,9 @@ namespace CreditRelease.API.Migrations
                     b.Property<byte>("NumeroDaParcela")
                         .HasColumnType("tinyint");
 
+                    b.Property<bool>("ParcelaPaga")
+                        .HasColumnType("bit");
+
                     b.Property<decimal>("ValorDaParcela")
                         .HasColumnType("decimal(18,2)");
 

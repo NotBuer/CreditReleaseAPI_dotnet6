@@ -16,12 +16,6 @@
             builder.Property(x => x.ValorTotal)
                 .IsRequired();
 
-            builder.Property(x => x.ValorTotalComTaxa)
-                .IsRequired();
-
-            builder.Property(x => x.ValorTaxa)
-                .IsRequired();
-
             builder.Property(x => x.QuantidadeParcelas)
                 .IsRequired();
 
