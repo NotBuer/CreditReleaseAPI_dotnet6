@@ -9,8 +9,7 @@
       "CreditRelease.Application/1.0.0": {
         "dependencies": {
           "CreditRelease.Domain": "1.0.0",
-          "CreditRelease.Infra.Context": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "7.0.0"
+          "CreditRelease.Infra.Context": "1.0.0"
         },
         "runtime": {
           "CreditRelease.Application.dll": {}

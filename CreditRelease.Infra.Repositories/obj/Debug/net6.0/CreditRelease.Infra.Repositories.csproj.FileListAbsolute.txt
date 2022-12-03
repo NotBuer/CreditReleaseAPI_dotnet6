@@ -1,0 +1,17 @@
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Repositories\bin\Debug\net6.0\CreditRelease.Infra.Repositories.deps.json
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Repositories\bin\Debug\net6.0\CreditRelease.Infra.Repositories.dll
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Repositories\bin\Debug\net6.0\CreditRelease.Infra.Repositories.pdb
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Repositories\bin\Debug\net6.0\CreditRelease.Domain.dll
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Repositories\bin\Debug\net6.0\CreditRelease.Domain.pdb
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Repositories\obj\Debug\net6.0\CreditRelease.Infra.Repositories.csproj.AssemblyReference.cache
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Repositories\obj\Debug\net6.0\CreditRelease.Infra.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Repositories\obj\Debug\net6.0\CreditRelease.Infra.Repositories.AssemblyInfoInputs.cache
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Repositories\obj\Debug\net6.0\CreditRelease.Infra.Repositories.AssemblyInfo.cs
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Repositories\obj\Debug\net6.0\CreditRelease.Infra.Repositories.csproj.CoreCompileInputs.cache
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Repositories\obj\Debug\net6.0\CreditRelease.Infra.Repositories.csproj.CopyComplete
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Repositories\obj\Debug\net6.0\CreditRelease.Infra.Repositories.dll
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Repositories\obj\Debug\net6.0\refint\CreditRelease.Infra.Repositories.dll
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Repositories\obj\Debug\net6.0\CreditRelease.Infra.Repositories.pdb
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Repositories\obj\Debug\net6.0\ref\CreditRelease.Infra.Repositories.dll
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Repositories\bin\Debug\net6.0\CreditRelease.Infra.Context.dll
+D:\Clã Dev\ProcessamentoLiberaçãoCrédito\CreditRelease.Infra.Repositories\bin\Debug\net6.0\CreditRelease.Infra.Context.pdb

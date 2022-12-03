@@ -1,4 +1,4 @@
-﻿namespace CreditRelease.Application.Services
+﻿namespace CreditRelease.Infra.Services
 {
     public class ReleaseCreditProcessingService : IReleaseCreditProcessingService
     {

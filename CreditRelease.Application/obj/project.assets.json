@@ -3256,8 +3256,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "CreditRelease.Domain >= 1.0.0",
-      "CreditRelease.Infra.Context >= 1.0.0",
-      "Microsoft.EntityFrameworkCore >= 7.0.0"
+      "CreditRelease.Infra.Context >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3305,12 +3304,6 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[7.0.0, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",

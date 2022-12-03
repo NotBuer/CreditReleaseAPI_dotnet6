@@ -1295,8 +1295,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "CreditRelease.Domain": "1.0.0",
-          "CreditRelease.Infra.Context": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "7.0.0"
+          "CreditRelease.Infra.Context": "1.0.0"
         },
         "compile": {
           "bin/placeholder/CreditRelease.Application.dll": {}
@@ -1335,9 +1334,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "CreditRelease.Application": "1.0.0",
           "CreditRelease.Domain": "1.0.0",
           "CreditRelease.Infra.Context": "1.0.0",
+          "CreditRelease.Infra.Repositories": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
         },
         "compile": {
@@ -1345,6 +1344,21 @@
         },
         "runtime": {
           "bin/placeholder/CreditRelease.Infra.IoC.dll": {}
+        }
+      },
+      "CreditRelease.Infra.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CreditRelease.Domain": "1.0.0",
+          "CreditRelease.Infra.Context": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CreditRelease.Infra.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CreditRelease.Infra.Repositories.dll": {}
         }
       }
     }
@@ -3877,6 +3891,11 @@
       "type": "project",
       "path": "../CreditRelease.Infra.IoC/CreditRelease.Infra.IoC.csproj",
       "msbuildProject": "../CreditRelease.Infra.IoC/CreditRelease.Infra.IoC.csproj"
+    },
+    "CreditRelease.Infra.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../CreditRelease.Infra.Repositories/CreditRelease.Infra.Repositories.csproj",
+      "msbuildProject": "../CreditRelease.Infra.Repositories/CreditRelease.Infra.Repositories.csproj"
     }
   },
   "projectFileDependencyGroups": {

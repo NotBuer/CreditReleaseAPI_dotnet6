@@ -1,11 +1,10 @@
-﻿using CreditRelease.Domain.Interfaces.Repositories;
-using CreditRelease.Application.Repositories;
-using Microsoft.Extensions.DependencyInjection;
-using CreditRelease.Application.Services;
+﻿using Microsoft.Extensions.DependencyInjection;
+using CreditRelease.Infra.Repositories.Repositories;
+using CreditRelease.Infra.Services;
 
 namespace CreditRelease.Infra.IoC.DI
 {
-    public static class Injector
+    public static class DependecyInjection
     {
         public static void AddDependencyInjection(this IServiceCollection services)
         {

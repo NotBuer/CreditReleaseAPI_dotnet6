@@ -1,4 +1,4 @@
-﻿namespace CreditRelease.Application.Repositories
+﻿namespace CreditRelease.Infra.Repositories.Repositories
 {
     public class FinanciamentoRepository : IFinanciamentoRepository
     {

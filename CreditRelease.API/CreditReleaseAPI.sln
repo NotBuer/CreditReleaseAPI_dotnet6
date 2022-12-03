@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditRelease.Domain", "..\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditRelease.API", "CreditRelease.API.csproj", "{2917BAC7-1E08-4B76-A107-11C6606D6330}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditRelease.Infra.Repositories", "..\CreditRelease.Infra.Repositories\CreditRelease.Infra.Repositories.csproj", "{94935486-C608-47DE-8DA6-85A7DEC2709C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{2917BAC7-1E08-4B76-A107-11C6606D6330}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2917BAC7-1E08-4B76-A107-11C6606D6330}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2917BAC7-1E08-4B76-A107-11C6606D6330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94935486-C608-47DE-8DA6-85A7DEC2709C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94935486-C608-47DE-8DA6-85A7DEC2709C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94935486-C608-47DE-8DA6-85A7DEC2709C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94935486-C608-47DE-8DA6-85A7DEC2709C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 		{E88A7313-A98C-49EE-8274-606C4534E409} = {95500C68-90A5-4481-81E6-7D3742E47C88}
 		{29482F1A-F255-43EB-9626-D453D463C9BC} = {BE65089A-784C-4268-B19A-B0D214D5AB68}
 		{2917BAC7-1E08-4B76-A107-11C6606D6330} = {6DEBFAE8-1E68-4FCB-B5B1-CF7AD2382451}
+		{94935486-C608-47DE-8DA6-85A7DEC2709C} = {E34CAFD5-43C2-4205-8096-8400FF07E000}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CB1B0141-D6ED-42BF-933E-CDEFF0771CCC}

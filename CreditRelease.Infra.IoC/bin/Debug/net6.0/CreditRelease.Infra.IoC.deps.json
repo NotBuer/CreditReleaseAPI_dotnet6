@@ -8,9 +8,9 @@
     ".NETCoreApp,Version=v6.0": {
       "CreditRelease.Infra.IoC/1.0.0": {
         "dependencies": {
-          "CreditRelease.Application": "1.0.0",
           "CreditRelease.Domain": "1.0.0",
           "CreditRelease.Infra.Context": "1.0.0",
+          "CreditRelease.Infra.Repositories": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
         },
         "runtime": {
@@ -613,16 +613,6 @@
           }
         }
       },
-      "CreditRelease.Application/1.0.0": {
-        "dependencies": {
-          "CreditRelease.Domain": "1.0.0",
-          "CreditRelease.Infra.Context": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "7.0.0"
-        },
-        "runtime": {
-          "CreditRelease.Application.dll": {}
-        }
-      },
       "CreditRelease.Domain/1.0.0": {
         "runtime": {
           "CreditRelease.Domain.dll": {}
@@ -637,6 +627,16 @@
         },
         "runtime": {
           "CreditRelease.Infra.Context.dll": {}
+        }
+      },
+      "CreditRelease.Infra.Repositories/1.0.0": {
+        "dependencies": {
+          "CreditRelease.Domain": "1.0.0",
+          "CreditRelease.Infra.Context": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.0"
+        },
+        "runtime": {
+          "CreditRelease.Infra.Repositories.dll": {}
         }
       }
     }
@@ -1081,17 +1081,17 @@
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
-    "CreditRelease.Application/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "CreditRelease.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "CreditRelease.Infra.Context/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CreditRelease.Infra.Repositories/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
